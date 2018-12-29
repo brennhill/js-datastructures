@@ -1,3 +1,8 @@
+/** This is a naive/bad example of a linked list.
+ *  In the blog post, we start from here and work towards a true re-usable data structure.
+ */
+ 
+// This obviously doesn't scale.
 const link3 = {
    data: "how data structures work!",
    next: null,
@@ -13,6 +18,7 @@ const link1 = {
    next: null,
    prev: null
 }
+
 link1.next = link2;
 link2.next = link3;
 link2.prev = link1;
@@ -37,3 +43,5 @@ while (current)  {
 }
 
 console.log(outputBack);
+
+// How can we turn this into something better?  See linked-list.js

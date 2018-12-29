@@ -11,8 +11,6 @@ class Node {
 
 }
 
-const testNode = new Node("hello", null, null);
-
 class List {
    constructor() {
       this.length = 0;
@@ -43,7 +41,7 @@ list.append("Item!");
 console.log(list.length);
 console.log(list.head);
 
- list = new List();
+list = new List();
 
 list.append("First");
 list.append("Second");
